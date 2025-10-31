@@ -1,6 +1,7 @@
 """
 단일 화면 코딩 힌트 평가 시스템
 """
+import argparse
 import gradio as gr
 import json
 import os
@@ -8,10 +9,6 @@ import sys
 from datetime import datetime
 from typing import List, Dict, Optional
 from pathlib import Path
-
-# 프로젝트 루트를 sys.path에 추가 (config.py import를 위해)
-project_root = Path(__file__).parent.parent
-sys.path.insert(0, str(project_root))
 
 from config import Config
 from models.model_inference import ModelManager
