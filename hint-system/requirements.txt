@@ -1,0 +1,45 @@
+# UI Framework
+gradio>=4.0.0
+
+# Core dependencies
+transformers>=4.36.0
+torch>=2.0.0
+accelerate>=0.25.0
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+
+# ============================================================================
+# vLLM - High-Performance Inference Server (RECOMMENDED)
+# ============================================================================
+# vLLM provides 15-24x faster inference compared to HuggingFace Transformers
+# Install with: pip install vllm
+# For CUDA 12.1+: pip install vllm --extra-index-url https://download.pytorch.org/whl/cu121
+#
+# Optional: Only install if you want to run vLLM server locally
+# If using remote vLLM server, only 'openai' package is needed (see below)
+vllm>=0.3.0  # Comment this out if not running vLLM server locally
+
+# Quantization support for HuggingFace models (4-bit/8-bit)
+bitsandbytes>=0.41.0  # For 4-bit quantization of large models
+
+# ============================================================================
+# Model Inference Backends
+# ============================================================================
+
+# OpenAI API 호환 (vLLM 서버 클라이언트 - REQUIRED for vLLM)
+openai>=1.0.0
+
+# Ollama - 로컬 환경용 (선택 사항)
+# ollama>=0.1.0  # Uncomment if using Ollama
+
+# ============================================================================
+# Utilities
+# ============================================================================
+tqdm>=4.66.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Configuration
+pyyaml>=6.0
+python-dotenv>=1.0.0
+requests>=2.31.0

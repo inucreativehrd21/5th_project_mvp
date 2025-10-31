@@ -1,0 +1,60 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.env
+.env.*
+.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Certificates and keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Misc
+*.sqlite3
+
+# Ignore local secrets and system-specific files
+secrets.json
+credentials.json
+
+# If you have any model cache directories, exclude them
+.cache/
+
+# Keep examples in repo but not real env files
+!.env.example
+hint-system/.env.example
+.env 
+logs/ 
+__pycache__\\ 
+*.pyc 
+.cache/ 
+model_cache/ 
